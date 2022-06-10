@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { ListEmployeesComponent } from './employees/list-employees.component';
 import { CreateEmployeeComponent } from './employees/create-employee.component';
 import { RouterModule, Routes } from '@angular/router';
+import { LandingPageComponent } from './employees/landing-page/landing-page.component';
 /* import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';*/ /* võib lisada*/
 
 const appRoutes: Routes = [
   {path: 'list', component: ListEmployeesComponent},
   {path: 'create', component: CreateEmployeeComponent},
+  {path: 'landing-page', component: LandingPageComponent},
   {path: '', redirectTo: '/list', pathMatch: 'full'}
 ]
 
@@ -19,7 +21,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     ListEmployeesComponent,
-    CreateEmployeeComponent
+    CreateEmployeeComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
